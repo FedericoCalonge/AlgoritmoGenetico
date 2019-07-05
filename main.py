@@ -223,11 +223,11 @@ while(listaEncontrada == False):
 		poblacion.mutacion(listaProfesores)
 	
 	ciclosEvolutivos=ciclosEvolutivos+1
-	print "Ciclo numero: ", ciclosEvolutivos
-	print "Puntaje Fitness del 1er elemento de la lista de individuos (el de MEJOR fitness):"
-	print poblacion.listaIndividuos[0].puntajeFitness
+	print ("Ciclo numero: ", ciclosEvolutivos)
+	print ("Puntaje Fitness del 1er elemento de la lista de individuos (el de MEJOR fitness):")
+	print (poblacion.listaIndividuos[0].puntajeFitness)
 
-print "Mejor solucion (individuo) encontrada/o: "
-print "Se necesitaron: ", ciclosEvolutivos, " ciclos para encontrarla."
-print "Y la mejor lista es:"
+print ("Mejor solucion (individuo) encontrada/o: ")
+print ("Se necesitaron: ", ciclosEvolutivos, " ciclos para encontrarla.")
+print ("Y la mejor lista es:")
 poblacion.listaIndividuos[0].imprimirLista2() #Imprimimos la mejor lista (la 1ra, que tendra el mejor fitness)

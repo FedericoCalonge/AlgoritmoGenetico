@@ -16,12 +16,11 @@ class Individuo(object):
 			print(elemento)
 
 	def imprimirLista2(self): #usado en el main para imprimir la mejor lista.
-		" ciclos para encontrarla."
-		print "El fitness del individuo es: ", self.puntajeFitness
+		print ("El fitness del individuo es: ", self.puntajeFitness)
 		for materia in self.listaMaterias:
-			print "La materia: ", materia.IdMateria
-			print "Se da el dia (Dia 1): ", materia.diaTurno1[0], " en el turno (Turno 1): ", materia.diaTurno1[1], ", teniendo como profesor a: ", materia.profesorDT1
-			print "Y se da el dia (Dia 2): ", materia.diaTurno2[0], " en el turno (Turno 2): ", materia.diaTurno2[1], " teniendo como profesor a: ", materia.profesorDT2
+			print ("La materia: ", materia.IdMateria)
+			print ("Se da el dia (Dia 1): ", materia.diaTurno1[0], " en el turno (Turno 1): ", materia.diaTurno1[1], ", teniendo como profesor a: ", materia.profesorDT1)
+			print ("Y se da el dia (Dia 2): ", materia.diaTurno2[0], " en el turno (Turno 2): ", materia.diaTurno2[1], " teniendo como profesor a: ", materia.profesorDT2)
 			#diaTurno 1 y 2 de un objeto materia: [diaOpcion1,turnoOpcion1], [diaOpcion2,turnoOpcion2]
 
 	def esValido(self): #devuelve un boolean. Lo usamos en el metodo fitness() de Poblacion
